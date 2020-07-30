@@ -1,6 +1,6 @@
 
 
-@extends('../layouts/timer', ['title' => 'Audric Donfack site web'])
+@extends('../layouts/awesome', ['title' => 'Audric Donfack site web'])
 <!--
 ==================================================
 Slider Section Start
@@ -17,6 +17,3 @@ Slider Section Start
     @include("../partials/awesome/services")
 @endsection
 
-@section("getintouch")
-    @include("../partials/awesome/getintouch")
-@endsection

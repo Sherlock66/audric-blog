@@ -21,6 +21,7 @@
             <link rel="stylesheet" href="{{asset('assets/css/slick.css')}}">
             <link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">
             <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/style.css')}}">
    </head>
 
    <body>
@@ -54,11 +55,10 @@
                                     <div class="main-menu f-right d-none d-lg-block">
                                         <nav> 
                                             <ul id="navigation">
-                                                <li><a href="{{route('/')}}">Home</a></li>
-                                                <li><a href="">A propos de Moi</a></li>
-                                                <li><a href="">Projets</a></li>
-                                                <li><a href="#">Services</a></li>
-                                                <li><a href="contact.html">Me Contacter</a></li>
+                                                <li><a href='/'>Home</a></li>
+                                                <li><a href='/projets'>Projets</a></li>
+                                                <li><a href='articles'>Articles</a></li>
+                                                <li><a href='/contact'>Me Contacter</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -78,11 +78,12 @@
         <!-- Header End -->
     </header>
     <main>
-        @yield("banner")
-        @yield("about")
-        @yield("works")
-        @yield("services")
-        @yield("contact")
+        @yield("banner");
+        @yield("about");
+        @yield('articles');
+        @yield("works");
+        @yield("services");
+        @yield("contact");
         @yield("login");
     </main>
     @yield("getintouch")
